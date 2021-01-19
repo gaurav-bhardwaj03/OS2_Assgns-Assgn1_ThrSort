@@ -21,7 +21,7 @@
 
 \noindent\textbf{\underline {Method 2 :}}In this method once all the threads have performed the sorting then half of the total number of threads will perform the merging of the segments while the remaining half exit. This merging occurs in phases while half total number of threads exit at the end of each phase. These steps will be repeated till the array is completely sorted. 
 
-To precisely identify the merging thread among two threads, we choose the thread with smaller id to perform the merge step while the other thread will terminate. Consider the following example: In first phase for merging of segment 1 and 2 thread 1 will perform the merging operation while thread 2 will perform the merging of segments 3 and 4. Again thread 1 will perform merging of segment 1,2 and 3,4. This is illustrated using the figures below. \\ 
+To precisely identify the merging thread among two threads, we choose the thread with smaller id to perform the merge step while the other thread will terminate. Consider the following example: In first phase for merging of segment 1 and 2 thread 1 will perform the merging operation while thread 3 will perform the merging of segments 3 and 4. Again thread 1 will perform merging of segment 1,2 and 3,4. This is illustrated using the figures below. \\ 
 
 
 %leads to the no. of sorted segments to half and half of the threads can die. Similarly quarter of the threads again perform the merging operation on the sorted segments and rest of the threads can die. 
@@ -51,7 +51,7 @@ Next, create another graph showing the times using both the methods while fixing
 \begin{enumerate}
     \item Report describing the low-level design of your program and analysis of output and graph. This file should be named as Asgn1$\_<$Roll No.$>$ Report.pdf
     \item Prepare a README file that contains the instructions on how to execute your submitted file. The file should be named as README.txt
-    \item Name the source code file in the following format: Asgn1\_sol1$\_<$Roll No.$>$.c and Asgn1\_sol2$\_<$Roll No.$>$.c
+    \item Name the source code file in the following format: Asgn1\_Meth1$\_<$Roll No.$>$.c and Asgn1\_Meth2$\_<$Roll No.$>$.c
     \item Upload the source code, report and README as a zip archive file and name it as Asgn1$\_<$Roll No.$>$.zip
     
 \end{enumerate}
