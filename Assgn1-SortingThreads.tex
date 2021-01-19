@@ -12,7 +12,7 @@
 \noindent\textbf{\underline {Objective :}} The objective of this assignment is to perform sorting of numbers efficiently using multiple threads. 
 \\\\ 
 
-\noindent\textbf{\underline {Sorting Technique :}} In this assignment, you will experiment with multi-threading the performance impact using real-time measurements. Given an array of size $2^n$ of double values. You have to divide the array into $2^p$ segments of equal size, $2^{p-n}$. Sort each segment using a sorting algorithm $S$ of your choice. You must then merge each of the $2^p$ segments. You can perform the merge using one of the following methods: \\\\
+\noindent\textbf{\underline {Sorting Technique :}} In this assignment, you will experiment with multi-threading the performance impact using real-time measurements. Given an array of size $2^n$ of double values. You have to divide the array into $2^p$ segments of equal size, $2^{p-n}$. $2^p$ threads will sort each segment using a sorting algorithm $S$ of your choice in parallel. You must then merge each of the $2^p$ segments. You can perform the merge using one of the following methods: \\\\
 
 \noindent\textbf{\underline {Method 1 :}} In this method once all the threads have performed the sorting and created the sorted segment, the main thread will perform the merge operation among the different segments one by one which results in the final sorted array. The following figure illustrate it. \\
 \includegraphics[width=\textwidth]{IMG1.JPG}
